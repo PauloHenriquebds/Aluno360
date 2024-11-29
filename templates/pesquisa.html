@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesquisa de Alunos e Turmas</title>
+  <link rel="stylesheet" href="css/pesquisa.css">
+  <script defer src="js/pesquisa.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>Turmas e Alunos</h1>
+      <button class="btn" onclick="setPlaceholder('turma')">Turmas</button>
+      <button class="btn" onclick="setPlaceholder('aluno')">Alunos</button>
+    </div>
+    <div class="right">
+      <h2 id="form-title">Escreva o nome do aluno</h2>
+      <form action="aluno.html" method="get">
+        <input 
+          type="text" 
+          id="input-field" 
+          name="nome" 
+          placeholder="Digite o nome do aluno" 
+          required>
+        <button type="submit" class="btn">Pesquisar</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
